@@ -1,10 +1,3 @@
-FROM golang
-
-RUN \
-  apt-get update -y && \
-  apt-get install -y \
-    mysql-client && \
-  apt-get clean && \
-  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
+FROM golang:1.8.0-alpine
 
 RUN go get github.com/GoogleCloudPlatform/cloudsql-proxy/cmd/cloud_sql_proxy
