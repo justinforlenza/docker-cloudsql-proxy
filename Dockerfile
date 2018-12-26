@@ -20,4 +20,4 @@ RUN \
 WORKDIR /cloudsql-proxy
 COPY run.sh .
 
-CMD sh run.sh
+CMD /bin/bash run.sh
