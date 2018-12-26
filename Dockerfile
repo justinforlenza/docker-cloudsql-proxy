@@ -17,7 +17,7 @@ RUN \
   && rm -rf /var/lib/apt/lists/* \
   && cloud_sql_proxy -version
 
-WORKDIR /cloudsql
+WORKDIR /cloudsql-proxy
 COPY run.sh .
 
 CMD sh run.sh
