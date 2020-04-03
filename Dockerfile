@@ -1,9 +1,7 @@
 FROM debian:stretch-slim
 
-LABEL maintainer="Syoya, Inc. https://github.com/syoya/docker-cloudsql-proxy"
-
-ENV CLOUDSQL_PROXY_VERSION=v1.13
-ENV CLOUDSQL_PROXY_SHA256=8bfffdfb9ad68fa4069491a8fe38d46462236caaf8cc0b7f523ccf782eec5891
+ENV CLOUDSQL_PROXY_VERSION=v1.16
+ENV CLOUDSQL_PROXY_SHA256=6e4df1e2b62e41b3c01818f75dd46a99cb0e9d385c3b6237281251e28cb38432
 
 RUN \
   apt update \
